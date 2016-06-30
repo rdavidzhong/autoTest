@@ -19,19 +19,19 @@ public class MyFirstTest {
 
         WebDriver driver = new FirefoxDriver();
 
-        driver.navigate().to("https://news360.com/");
-        baseUrl = "https://news360.com/";
+        driver.navigate().to("https://.com/");
+        baseUrl = "https://.com/";
 
         driver.get(baseUrl + "/");
         driver.findElement(By.linkText("Sign in with email")).click();
         driver.findElement(By.id("signinemail")).clear();
-        driver.findElement(By.id("signinemail")).sendKeys("your@email.com");
+        driver.findElement(By.id("signinemail")).sendKeys("email@gmail.com");
         driver.findElement(By.name("password")).clear();
-        driver.findElement(By.name("password")).sendKeys("your_pw");
+        driver.findElement(By.name("password")).sendKeys("123qwe");
         driver.findElement(By.xpath("(//button[@type='submit'])[2]")).click();
 
-        driver.close();
-        driver.quit();
+       // driver.close();
+       // driver.quit();
 
     }
 }
